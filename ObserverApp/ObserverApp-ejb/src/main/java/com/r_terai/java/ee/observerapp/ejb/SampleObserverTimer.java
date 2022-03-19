@@ -7,7 +7,7 @@ package com.r_terai.java.ee.observerapp.ejb;
 
 import com.r_terai.java.ee.common.entity.util.COMMONEntityUtil;
 import com.r_terai.java.util.Logger;
-import com.rterai.java.ee.common.TimerEJB;
+import com.r_terai.java.ee.common.TimerEJB;
 import java.util.Date;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;

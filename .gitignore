@@ -27,3 +27,6 @@ hs_err_pid*
 /Observer-app/ObserverApp-ear/target/
 /Observer-app/ObserverApp-ejb/target/
 /Observer-app/ObserverApp-web/target/
+/ObserverApp/ObserverApp-ejb/target/
+/ObserverApp/ObserverApp-web/target/
+/ObserverApp/ObserverApp-ear/target/
