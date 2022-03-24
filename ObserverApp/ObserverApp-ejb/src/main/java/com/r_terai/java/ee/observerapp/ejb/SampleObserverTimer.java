@@ -5,12 +5,13 @@
  */
 package com.r_terai.java.ee.observerapp.ejb;
 
+import com.r_terai.java.ee.common.TimerEJB;
 import com.r_terai.java.ee.common.entity.util.COMMONEntityUtil;
 import com.r_terai.java.util.Logger;
-import com.r_terai.java.ee.common.TimerEJB;
 import java.util.Date;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import javax.ejb.Timeout;
 import javax.ejb.Timer;
 import javax.naming.NamingException;
 
@@ -22,7 +23,9 @@ import javax.naming.NamingException;
 @Singleton
 public class SampleObserverTimer extends TimerEJB {
 
+    @Timeout
     @Override
+//    @Interceptors(LogInterceptor.class)
     public void timeout(Timer timer) {
         try {
             COMMONEntityUtil.ObserverTargetUtil.kick(em, 200, (new Date()).toString(), false);
